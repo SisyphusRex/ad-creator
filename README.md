@@ -27,3 +27,10 @@ This, too, must have rules that must be defined.
 
 Thank you for your interest in this project!
 If you have any questions, reach out to SisyphusRex on github.
+
+#ADCreator requires the following pip installed modules
+#1. easygui
+#2. sys
+#3. typing
+#4. json
+#5. pytest
