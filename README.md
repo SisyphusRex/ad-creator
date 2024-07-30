@@ -1,2 +1,29 @@
-# ADCreator
-Active Directory Creator simulation in Python
+Hello! Welcome to the Active Directory Creator.
+
+This Python program simulates the creation of a basic Active Directory.  
+The program guides the user down the logical hierarchy of a network and its Active Directory, 
+creating a unique Active Directory based on the user's inputs.
+At the end, the created Active Directory is saved to a JSON file for the user to keep.
+
+
+This project is my final submission to Harvard's CS50 Introduction to Programming with Python course taught by David J. Malan.
+I chose the topic of Active Directory because I was studying computer networking at the time.
+Not only did I learn valuable lessons about creating a project in Python, but I also became intimately familiar
+with the back end logic of creating an Active Directory and creating a program that manages the Active Directory!
+
+This program has some limitations: primarily in its scope and functionality.  For now, the user can only travel down
+the logical hierarchy of a network and create a visual representation via JSON of the Active Directory.  Even in 
+the creation, the user is limited to the number of objects he can add to the Active Directory.  This is to prevent
+confusion and complexity since an Active Directory can become increadible large.  Also, a true Active Directory
+is not only the logical hierarchy of the network, but the Group Policies and Access Control Lists assigned to objects.  And in
+a true Active Directory, one should be able to modify the network by moving objects around.
+
+These limitations can be addressed by expanding the current program since the logical hierarchy is already established.  If
+a better GUI is found, then the program could accept objects whose number is not predetermined.  GPOs and ACLs could be created as
+their own custom classes and the original object classes have modified attributes to accept GPOs and ACLs.  More functions to determine 
+the rules and consequences of having a GPO or ACL would have to be added.  Managing the Active Directory by moving objects is
+much closer at hand.  One only need change an object's container and the containers', both new and old, contents to "move" an object.
+This, too, must have rules that must be defined.
+
+Thank you for your interest in this project!
+If you have any questions, reach out to SisyphusRex on github.
