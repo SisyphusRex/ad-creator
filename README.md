@@ -14,7 +14,7 @@ with the back end logic of creating an Active Directory and creating a program t
 This program has some limitations: primarily in its scope and functionality.  For now, the user can only travel down
 the logical hierarchy of a network and create a visual representation via JSON of the Active Directory.  Even in 
 the creation, the user is limited to the number of objects he can add to the Active Directory.  This is to prevent
-confusion and complexity since an Active Directory can become increadible large.  Also, a true Active Directory
+confusion and complexity since an Active Directory can become incredibly large.  Also, a true Active Directory
 is not only the logical hierarchy of the network, but the Group Policies and Access Control Lists assigned to objects.  And in
 a true Active Directory, one should be able to modify the network by moving objects around.
 
