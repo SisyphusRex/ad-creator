@@ -346,21 +346,21 @@ def create_new_dict(n):
     for item in n:
         #I had trouble with the type() method on my custom classes, so I extracted the type manually.
         match str(type(item)):
-            case "<class 'ContnrClasses.Forest'>":
+            case "<class 'ADCreatorClasses.Forest'>":
                 item_type = "Forest"
-            case "<class 'ContnrClasses.Tree'>":
+            case "<class 'ADCreatorClasses.Tree'>":
                 item_type = "Tree"
-            case "<class 'ContnrClasses.Child'>":
+            case "<class 'ADCreatorClasses.Child'>":
                 item_type = "Child"
-            case "<class 'ContnrClasses.Domain'>":
+            case "<class 'ADCreatorClasses.Domain'>":
                 item_type = "Domain"
-            case "<class 'ContnrClasses.OU'>":
+            case "<class 'ADCreatorClasses.OU'>":
                 item_type = "OU"
-            case "<class 'ContnrClasses.Group'>":
+            case "<class 'ADCreatorClasses.Group'>":
                 item_type = "Group"
-            case "<class 'ContnrClasses.User'>":
+            case "<class 'ADCreatorClasses.User'>":
                 item_type = "User"
-            case "<class 'ContnrClasses.Computer'>":
+            case "<class 'ADCreatorClasses.Computer'>":
                 item_type = "Computer"
         if item.contents != []:
             #due to the nature of my custom classes, Recursion is possible
@@ -402,21 +402,21 @@ def format_container_list(n: Union["Forest", "Tree", "Child", "Domain", "OU", "G
     type_list = []
     for item in object_list:
         match str(type(item)):
-            case "<class 'ContnrClasses.Forest'>":
+            case "<class 'ADCreatorClasses.Forest'>":
                 type_list.append("Forest")
-            case "<class 'ContnrClasses.Tree'>":
+            case "<class 'ADCreatorClasses.Tree'>":
                 type_list.append("Tree")
-            case "<class 'ContnrClasses.Child'>":
+            case "<class 'ADCreatorClasses.Child'>":
                 type_list.append("Child")
-            case "<class 'ContnrClasses.Domain'>":
+            case "<class 'ADCreatorClasses.Domain'>":
                 type_list.append("Domain")
-            case "<class 'ContnrClasses.OU'>":
+            case "<class 'ADCreatorClasses.OU'>":
                 type_list.append("OU")
-            case "<class 'ContnrClasses.Group'>":
+            case "<class 'ADCreatorClasses.Group'>":
                 type_list.append("Group")
-            case "<class 'ContnrClasses.User'>":
+            case "<class 'ADCreatorClasses.User'>":
                 type_list.append("User")
-            case "<class 'ContnrClasses.Computer'>":
+            case "<class 'ADCreatorClasses.Computer'>":
                 type_list.append("Computer")
     name_list = translate_container_list(object_list)
     my_range = range(len(object_list))
