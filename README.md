@@ -34,3 +34,6 @@ If you have any questions, reach out to SisyphusRex on github.
 #3. typing
 #4. json
 #5. pytest
+
+Edit: 09/12/2024
+I realized why I had so much trouble with my classes retaining information from previous instances.  I originally learned to program in Java, which is a Pass by Value language.  Python is a Pass by Assignment language.  Mutable objects can be mutated from within functions.  Since all of my custom classes included lists as the contents parameter, each new instance was inheriting old data.  I will have to look further into the code and see how I can rewrite it.
