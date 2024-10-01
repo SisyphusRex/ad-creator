@@ -40,3 +40,13 @@ After moving further into my studies, I realize that my classes could benefit fr
 
 Edit: 09/12/2024
 I realized why I had so much trouble with my classes retaining information from previous instances.  I originally learned to program in Java, which is a Pass by Value language.  Python is a Pass by Assignment language.  Mutable objects can be mutated from within functions.  Since all of my custom classes included lists as the contents parameter, each new instance was inheriting old data.  I will have to look further into the code and see how I can rewrite it.
+
+Edit: 10/01/2024
+I discovered the correct method of initializing an instance with a mutable objects such as a list as an attribute.  
+  ```python
+class BeverageCollection:
+  def __init__ (self, __beverages: list = None):
+    """Constructor"""
+    self.__beverages = __beverages or []
+```
+This keeps future instances from referencing the same data/memory spot as the previous instances.
